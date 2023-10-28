@@ -167,59 +167,8 @@ header img{
     cursor: pointer;
 }
 
-.page-login{
-    width: 350px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    margin-top: -32%; 
-    margin-left: 38%;
-    background-color: #0f0f0f;
-    border: 2px solid #d9d9d9;
-    border-radius: 30px;
-}
-
-.page-login div{
-    width: 310px;
-    height: 410px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-    justify-content: center;
-    background-color: #d9d9d9;
-    border-radius: 20px;
-}
-
-.page-login h1{
-    font-size: 30px;
-    margin-top: -30px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.correo{
-    font-size: 20px;
-}
-
-.input-correo{
-    padding-left: 10px;
-}
-
-.contraseña{
-    font-size: 20px;
-}
-
-#registrarse{
-    text-align: center;
-}
-
 .difuminado{
-    filter: blur(2px);
+    filter: blur(8px);
 }
 
 .form {
@@ -344,5 +293,79 @@ header img{
       border: 1px solid #2d79f3;
       ;
 }   
-  
-      
+.container-card{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 1.5rem 0;
+}
+
+.card{
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    flex: 0 0 309px;
+    height: 450px;
+    overflow: hidden;
+    margin-left: 1.5rem;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imagen{
+    width: 100%;
+}
+
+.contenido{
+    position: absolute;
+    top: 0;
+    padding: 28px;
+    font-weight: 600;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.05rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.link{
+    font-size: 1.3rem;
+}
+
+.text{
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.link{
+    width: 250px;
+    height: 57px;
+    background-color: #ca1d1d;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 36px;
+    color: #d9d9d9;
+    cursor: pointer;
+
+}
