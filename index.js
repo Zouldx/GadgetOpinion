@@ -6,5 +6,3 @@ iniciaSesion.addEventListener("click", () => {
     form.style.display = "block";
     principalContainer.className = "difuminado"
 });
-
-/* hola */
