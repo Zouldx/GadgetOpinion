@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500;1,700;1,800&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+    gap: 25px;
+}
+
+header h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 58%;
+    margin-left: 2%;
+}
+
+header button{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #d9d9d9;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+header img{
+    height: 57px;
+} 
+
+.nav-bar{
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    gap: 10px;
+}
+
+.principal-container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.exhibition{
+    display: flex;
+    flex-direction: column;
+}
+
+.exhibition-macbook{
+    width: 571px;
+    height: 367px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.exhibition-iphone{
+    width: 286px;
+    height: 292px;
+    margin-top: -255px;
+    margin-left: 350px;
+}
+
+.text-exhibition{
+    width: 407px;
+    height: 104px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.text-exhibition button{
+    font-size: 32px;
+    color: #ffffff;
+    border: none;
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+.secundary-container{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.secundary-container p{
+    font-size: 32px;
+    color: white;
+    margin-top: 55px;
+    margin-left: 50px;
+}
+
+.apple-watch{
+    width: 696px;
+    height: 377px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-left: 28px;
+    border-radius: 50px;
+}
+
+.apple-watch img{
+    height: 429px;
+    margin-top: 20px;
+    margin-left: -150px;
+}
+
+.buy-zone{
+    width: 387px;
+    height: 315px;
+    display: grid;
+    place-items: center;
+    margin-left: -90px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.buy-zone h1{
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Poppins', bold;
+    font-size: 26px;
+}
+
+.buy-zone p{
+    width: 297px;
+    height: 116px;
+    color: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+    text-align: center;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.buy-zone button{
+    width: 304px;
+    height: 57px;
+    background-color: #ca1d1d;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 36px;
+    color: #d9d9d9;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.page-login{
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: -32%; 
+    margin-left: 38%;
+    background-color: #0f0f0f;
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+}
+
+.page-login div{
+    width: 310px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+
+.page-login h1{
+    font-size: 30px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.correo{
+    font-size: 20px;
+}
+
+.input-correo{
+    padding-left: 10px;
+}
+
+.contraseña{
+    font-size: 20px;
+}
+
+#registrarse{
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .form button {
+    align-self: flex-end;
+  }
+  
+  .flex-column > label {
+    color: #151717;
+    font-weight: 600;
+  }
+  
+  .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .flex-row > div > label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #2d79f3;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button-submit {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .button-submit:hover {
+    background-color: #252727;
+  }
+  
+  .p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  
+  .btn:hover {
+      border: 1px solid #2d79f3;
+      ;
+}   
+  
+      
