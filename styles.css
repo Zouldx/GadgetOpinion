@@ -41,6 +41,14 @@ header img{
     height: 57px;
 } 
 
+header div{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 .nav-bar{
     height: 30px;
     border-radius: 20px;
@@ -181,26 +189,26 @@ header img{
     border-radius: 20px;
     z-index: 1;
     position: absolute;
-    margin-top: -33%; 
+    margin-top: -53%; 
     margin-left: 35%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: none;
 }
-  
+
 ::placeholder {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  .form button {
+}
+
+.form button {
     align-self: flex-end;
-  }
-  
-  .flex-column > label {
+}
+
+.flex-column > label {
     color: #151717;
     font-weight: 600;
-  }
+}
 
-  .inputForm {
+.inputForm {
     border: 1.5px solid #ecedec;
     border-radius: 10px;
     height: 50px;
@@ -208,47 +216,47 @@ header img{
     align-items: center;
     padding-left: 10px;
     transition: 0.2s ease-in-out;
-  }
-  
-  .input {
+}
+
+.input {
     margin-left: 10px;
     border-radius: 10px;
     border: none;
     width: 85%;
     height: 100%;
-  }
-  
-  .input:focus {
+}
+
+.input:focus {
     outline: none;
-  }
-  
-  .inputForm:focus-within {
+}
+
+.inputForm:focus-within {
     border: 1.5px solid #2d79f3;
-  }
-  
-  .flex-row {
+}
+
+.flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     justify-content: space-between;
-  }
-  
-  .flex-row > div > label {
+}
+
+.flex-row > div > label {
     font-size: 14px;
     color: black;
     font-weight: 400;
-  }
-  
-  .span {
+}
+
+.span {
     font-size: 14px;
     margin-left: 5px;
     color: #2d79f3;
     font-weight: 500;
     cursor: pointer;
-  }
-  
-  .button-submit {
+}
+
+.button-submit {
     margin: 20px 0 10px 0;
     background-color: #151717;
     border: none;
@@ -259,20 +267,20 @@ header img{
     height: 50px;
     width: 100%;
     cursor: pointer;
-  }
-  
-  .button-submit:hover {
+}
+
+.button-submit:hover {
     background-color: #252727;
-  }
-  
-  .p {
+}
+
+.p {
     text-align: center;
     color: black;
     font-size: 14px;
     margin: 5px 0;
-  }
-  
-  .btn {
+}
+
+.btn {
     margin-top: 10px;
     width: 100%;
     height: 50px;
@@ -286,28 +294,40 @@ header img{
     background-color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-  }
-  
-  
-  .btn:hover {
-      border: 1px solid #2d79f3;
-      ;
+}
+
+.btn:hover {
+    border: 1px solid #2d79f3;
 }   
+
+.principal-container-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-container-cards div{
+    display: flex;
+    flex-direction: row;
+
+}
+
 .container-card{
     width: 100%;
     height: 250px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 30px;
     display: flex;
     overflow-x: auto;
     scrollbar-width: none;
     padding: 1.5rem 0;
+    align-items: center;
 }
 
+
 .card{
-    flex: 1 0 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -328,8 +348,13 @@ header img{
     margin-bottom: 30px;
 }
 
+.card1{
+    margin-left: -7rem;
+}
+
 .imagen{
     width: 100%;
+    margin-top: -20px;
 }
 
 .contenido{
@@ -347,6 +372,7 @@ header img{
 }
 
 .link{
+    z-index: 1;
     font-size: 1.3rem;
 }
 
@@ -367,5 +393,4 @@ header img{
     font-size: 36px;
     color: #d9d9d9;
     cursor: pointer;
-
 }
