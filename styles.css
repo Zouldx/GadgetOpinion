@@ -316,7 +316,6 @@ header div{
 .principal-container-cards div{
     display: flex;
     flex-direction: row;
-
 }
 
 .container-card{
@@ -328,7 +327,6 @@ header div{
     justify-content: space-between;
     display: flex;
     overflow-x: auto;
-    scrollbar-width: none;
     padding: 1.5rem 0;
     align-items: center;
 }
@@ -343,9 +341,7 @@ header div{
     width: 300px;
     height: 200px;
     position: relative;
-    flex: 0 0 309px;
     height: 450px;
-    overflow: hidden;
     margin-left: 1.5rem;
     border-radius: 18px;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
@@ -365,8 +361,6 @@ header div{
 }
 
 .contenido{
-    position: absolute;
-    top: 0;
     padding: 28px;
     font-weight: 600;
 }
@@ -376,11 +370,6 @@ header div{
     font-size: 2.05rem;
     margin-bottom: 1rem;
     text-align: center;
-}
-
-.link{
-    z-index: 1;
-    font-size: 1.3rem;
 }
 
 .text{
@@ -400,8 +389,140 @@ header div{
     font-size: 36px;
     color: #d9d9d9;
     cursor: pointer;
+    z-index: 1;
+    font-size: 1.3rem;
 }
 
 .menu{
     display: none;
+}
+
+@media screen and (width <= 767px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1{
+        display: block;
+    }
+
+    .container-login{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .principal-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exhibition{
+        flex-direction: column;
+    }
+
+    .exhibition-macbook{
+        width: 356px;
+        height: auto;
+        margin-left: 10%;
+    }
+
+    .exhibition-iphone{
+        width: 165px;
+        height: auto;
+        margin-top: -28%;
+        margin-left: 56%;
+    }
+
+    .text-exhibition{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    .texto{
+        display: none;
+    }
+
+    .texto-new{
+        margin-top: 20px;
+        text-align: center;
+        color: #d9d9d9;
+        font-size: 27px;
+    }
+    
+    .apple-watch{
+        width: 400px;
+        height: 950px;
+        margin-left: 6px;
+        margin-top: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .apple-watch img{
+        margin-top: -40px;
+        margin-left: 0;
+    }
+    
+    .buy-zone{
+        width: 387px;
+        height: 300px;
+        gap: 25px;
+        margin-top: -35px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .principal-container-cards div{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin-top: 160%;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        width: 300px;
+        height: 200px;
+        flex: 0 0 309px;
+        height: 450px;
+        border-radius: 18px;
+        box-shadow: 2px 4px 12px rgba(255, 255, 255, 0.08);
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .card1{
+        margin-left: 0;
+    }
+
 }
