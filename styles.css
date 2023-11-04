@@ -24,6 +24,8 @@ header{
     align-items: center;
     background-color: #d9d9d9;
     gap: 25px;
+    scroll-behavior: smooth;
+    
 }
 
 header h1{
