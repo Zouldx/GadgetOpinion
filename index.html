@@ -71,13 +71,29 @@
         <!-- Begin of header-->
     
         <header>
-            <h1>GadgetOpinion</h1>
-            <img src="images/icons8-menú.svg" alt="" class="menu">
-            <div class="container-login">
-                <input class="nav-bar" type="text" placeholder="Search">
-                <button class="log-in" id="logIn">Log In</button>
-                <img src="./images/icons8-usuario-masculino-en-círculo-64.png" alt="">
-            </div>
+            <section class="header">
+                <h1>GadgetOpinion</h1>
+    
+                <div class="container-login">
+                    <input class="nav-bar" type="text" placeholder="Search">
+                    <button class="log-in" id="logIn">Log In</button>
+                    <img src="./images/icons8-usuario-masculino-en-círculo-64.png" alt="">
+                </div>
+            </section>
+
+            <section class="mobile">
+                <h1>GadgetOpinion</h1>
+                <button class="abrir-menu" id="abrir"><img src="images/icons8-menú.svg" alt="" class="menu"></button>
+
+                <nav class="nav" id="nav">
+                    <button class="cerrar-menu" id="cerrar"><img src="images/icons8-eliminar.svg" alt="" class="menu-cerrar"></button>
+                    <ul class="nav-list">
+                        <li id="btn-home"><a href="#home">Home</a></li>
+                        <li id="btn-new"><a href="#new-product">New Product</a></li>
+                        <li id="btn-products"><a href="#products">Products</a></li>
+                    </ul>
+                </nav>
+            </section>
         </header>
     
         <!-- End of header -->
@@ -87,16 +103,20 @@
     
         <section class="principal-container">
             <div class="exhibition">
-                <img src="images/mbp16-gray.png" alt="" class="exhibition-macbook">
-                <img src="images/iPhone_15_Pro_Titanio_Blanco_256GB16947863314.png" alt="" class="exhibition-iphone">
+                <div class="images">
+                    <img src="images/mbp16-gray.png" alt="" class="exhibition-macbook">
+                    <img src="images/iPhone_15_Pro_Titanio_Blanco_256GB16947863314.png" alt="" class="exhibition-iphone">
+                </div>
     
                 <p class="texto-new">
                     Tell us about this new products, what do you think about the Iphone 15, and the new Macbook Air.
                 </p>
                 
-                <div class="text-exhibition">
-                    <button id="buttonProducts">¡Our new products!</button>
-                </div>
+                <section class="texto-exhibition">
+                    <div class="text-exhibition">
+                        <button id="buttonProducts">¡Our new products!</button>
+                    </div>
+                </section>
             </div>
     
             <section class="secundary-container">
@@ -105,17 +125,20 @@
                         Tell us about this new products, what do you think about the Iphone 15, and the new Macbook Air.
                     </p>
                 </div>
-    
-                <div class="apple-watch">
-                    <img src="images/Apple-Watch-Apple-Watch-Iwatch-PNG-Image.png" alt="">
-    
-                    <div class="buy-zone">
-                        <h1>Apple Watch Series 9</h1>
-                        <p>This new watch is here to meet all your expectations and take you out of your comfort zone.</p>
-                        <button id="buttonBuy">¡Buy Now!</button>
+                
+                <section class="buy-watch" id="new-product">
+                    <div class="apple-watch">
+                        <img src="images/Apple-Watch-Apple-Watch-Iwatch-PNG-Image.png" alt="">
+        
+                        <div class="buy-zone">
+                            <h1>Apple Watch Series 9</h1>
+                            <p>This new watch is here to meet all your expectations and take you out of your comfort zone.</p>
+                            <button id="buttonBuy">¡Buy Now!</button>
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
+
         </section>
     
         <!-- end of home page -->
@@ -124,7 +147,7 @@
         
         <section class="principal-container-cards">
             <div class="container-cards">
-                <article class="card card1">
+                <article class="card card1" id="products">
                     <section class="contenido">
                         <p class="text">
                             <h3 class="title">Asus TUF 15,6</h3>

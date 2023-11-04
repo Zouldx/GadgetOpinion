@@ -393,7 +393,25 @@ header div{
     font-size: 1.3rem;
 }
 
-.menu{
+.mobile{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.abrir-menu, .cerrar-menu{
     display: none;
 }
 
@@ -405,46 +423,111 @@ header div{
         align-items: center;
         justify-content: center;
     }
-
-    header{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    header h1{
-        display: block;
-    }
-
+    
     .container-login{
         display: none;
     }
 
+    .header{
+        display: none;
+    }
+
+    .mobile{
+        width: auto;
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .mobile h1{
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .abrir-menu{
+        margin-left: 0;
+    }
+
+    .cerrar-menu{
+        border-radius: 10px;
+        background-color: transparent;
+        border: none;
+    }
+
     .menu{
+        width: 45px;
+        height: auto;
+        display: grid;
+        place-content: center;
+    }
+
+    .menu-cerrar{
+        width: 25px;
+    }
+
+    .abrir-menu, .cerrar-menu{
         display: block;
     }
 
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2b352b;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a{
+        color: white;
+    }
+    
     .principal-container{
         display: flex;
         flex-direction: column;
     }
-
+    
     .exhibition{
         flex-direction: column;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .exhibition-macbook{
         width: 356px;
         height: auto;
-        margin-left: 10%;
+        margin-left: 0;
     }
 
     .exhibition-iphone{
-        width: 165px;
-        height: auto;
-        margin-top: -28%;
-        margin-left: 56%;
+        display: none;
+    }
+
+    .texto-exhibition{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .text-exhibition{
@@ -452,7 +535,7 @@ header div{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 30px;
+        margin-left: 0;
     }
 
     .texto{
@@ -461,6 +544,8 @@ header div{
 
     .texto-new{
         margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
         color: #d9d9d9;
         font-size: 27px;
@@ -468,7 +553,7 @@ header div{
     
     .apple-watch{
         width: 400px;
-        height: 950px;
+        height: 680px;
         margin-left: 6px;
         margin-top: 65px;
         display: flex;
@@ -481,6 +566,14 @@ header div{
     .apple-watch img{
         margin-top: -40px;
         margin-left: 0;
+    }
+
+    .buy-watch{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 98%;
     }
     
     .buy-zone{
@@ -507,10 +600,10 @@ header div{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: relative;
         margin-top: 30px;
         width: 300px;
         height: 200px;
-        flex: 0 0 309px;
         height: 450px;
         border-radius: 18px;
         box-shadow: 2px 4px 12px rgba(255, 255, 255, 0.08);
